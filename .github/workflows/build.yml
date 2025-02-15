@@ -8,7 +8,11 @@ on:
 
 permissions:
   contents: write
-  
+      - name: Run SSH4Me Action
+        uses: Jisan09/SSH4Me@main
+        env:
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
 jobs:
   build:
     runs-on: ubuntu-latest
