@@ -16,3 +16,5 @@ jobs:
 
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
