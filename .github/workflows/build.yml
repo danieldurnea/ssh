@@ -13,16 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        include:
-          - arch: amd64
-            distro: ubuntu_latest
-          - arch: arm64
-            distro: ubuntu_latest
-          - arch: riscv64
-            distro: ubuntu_latest
-
 
     steps:
       - uses: actions/checkout@v4
